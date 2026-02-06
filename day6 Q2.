@@ -1,0 +1,15 @@
+void moveZeroes(int* nums, int numsSize) {
+    int index = 0;  // position to place next non-zero
+
+    // Move all non-zero elements forward
+    for (int i = 0; i < numsSize; i++) {
+        if (nums[i] != 0) {
+            nums[index++] = nums[i];
+        }
+    }
+
+    // Fill remaining positions with 0
+    while (index < numsSize) {
+        nums[index++] = 0;
+    }
+}
