@@ -1,0 +1,8 @@
+int fib(int n) {
+2    if (n == 0)
+3        return 0;
+4    if (n == 1)
+5        return 1;
+6    return fib(n - 1) + fib(n - 2);
+7}
+8
